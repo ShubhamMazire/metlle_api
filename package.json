@@ -1,0 +1,37 @@
+{
+  "name": "vast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "migrate": "cd database && npx knex migrate:latest",
+    "rollback": "cd database && npx knex migrate:rollback",
+    "seed": "cd database && npx knex seed:run"
+  },
+  "author": "Nilesh Mahajan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@scalenc/stl-to-png": "^1.1.0",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.1.1",
+    "g": "^2.0.1",
+    "knex": "^2.5.1",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-ccavenue": "^1.0.5",
+    "pdf-creator-node": "^2.3.5",
+    "pdfmake": "^0.2.7"
+  }
+}
